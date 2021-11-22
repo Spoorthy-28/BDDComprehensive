@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.mindtree.utilities.Listener"/>
+    <listener class-name="com.mindtree.utilities.ExtentReporterNG"/>
+  </listeners>
+  <test parallel="none" name="Validations(failed)">
+    <classes>
+      <class name="testRunner.TestRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="3"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- testRunner.TestRunner -->
+    </classes>
+  </test> <!-- Validations(failed) -->
+</suite> <!-- Failed suite [Suite] -->
